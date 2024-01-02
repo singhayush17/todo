@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  dropwizard-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql-db
+
+  mysql-db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 1
+      MYSQL_DATABASE: todoList
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 1
+    ports:
+      - "3307:3306"

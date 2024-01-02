@@ -1,0 +1,11 @@
+---
+logging:
+  level: INFO
+  loggers:
+    com.example: DEBUG
+
+database:
+  driverClass: com.mysql.jdbc.Driver
+  user: root
+  password: 1
+  url: jdbc:mysql://localhost:3307/todoList
