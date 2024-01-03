@@ -8,4 +8,4 @@ database:
   driverClass: com.mysql.jdbc.Driver
   user: root
   password: 1
-  url: jdbc:mysql://localhost:3307/todoList
+  url: jdbc:mysql://mysqldb:3306/todoList
